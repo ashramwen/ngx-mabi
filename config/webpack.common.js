@@ -25,8 +25,8 @@ const ngcWebpack = require('ngc-webpack');
 const HMR = helpers.hasProcessFlag('hot');
 const AOT = helpers.hasNpmFlag('aot');
 const METADATA = {
-  title: 'ng2-admin - Angular 2 Admin Template',
-  description: 'Free Angular 2 and Bootstrap 4 Admin Template',
+  title: '十六米の世界',
+  description: 'Fantasy Life in the Mabinogi',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };

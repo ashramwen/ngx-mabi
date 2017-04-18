@@ -17,9 +17,9 @@
       "option1": "Option 1"
     },
     "menu": {
-      "dashboard": "Dashboard",
-      "editors": "Editors",
-      "ck_editor": "CKEditor",
+      "dashboard": "貿易雞",
+      "notebook": "記事本",
+      "panda": "野生圓仔",
       "components": "Components",
       "tree_view": "Tree View",
       "charts": "Charts",
