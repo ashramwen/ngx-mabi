@@ -1,0 +1,11 @@
+.alpaca {
+  margin-top: -400px;
+  cursor: pointer;
+  width: 250px;
+  height: 393px;
+  background-image: url("/assets/img/alpaca.png");
+  &:hover {
+    background-position: 0 -393px;
+  }
+  outline: none;
+}

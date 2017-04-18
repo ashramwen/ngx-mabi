@@ -81,6 +81,11 @@ a {
 .al-footer-main {
   float: left;
   margin-left: 15px;
+    i {
+    margin: 0 4px;
+    color: $danger;
+    font-size: 12px;
+  }
 }
 
 .al-copy {
@@ -90,11 +95,6 @@ a {
 .al-footer-right {
   float: right;
   margin-right: 12px;
-  i {
-    margin: 0 4px;
-    color: $danger;
-    font-size: 12px;
-  }
   a {
     margin-left: 4px;
     color: $default-text;

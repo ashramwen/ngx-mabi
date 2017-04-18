@@ -14,27 +14,31 @@
   width: 200px;
 }
 
-table {
-  text-align: center;
-}
-
-.alpaca {
-  position: absolute;
-  bottom: 0;
-  left: 900px;
-  cursor: pointer;
-  width: 250px;
-  height: 393px;
-  background-image: url("/assets/img/alpaca.png");
-  &:hover {
-    background-position: 0 -393px;
-  }
-  outline: none;
-}
-
 .sheep {
   position: absolute;
   top: 70px;
   right: 50px;
   cursor: pointer;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+td {
+  padding-left: 16px !important;
 }

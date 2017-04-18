@@ -5,14 +5,14 @@
         <tab title="{{c.cht_name}}" *ngFor="let c of citys; let i = index" [active]="i===cityIndex">
           <table class="table">
             <tr>
-              <th class="w200">貨品</th>
+              <th class="w200 text-center">貨品</th>
               <th>價格</th>
               <th class="w100" *ngFor="let car of conveyance">{{car.name}}</th>
             </tr>
             <tr *ngFor="let g of (goods | matchCity:c.id)">
-              <td>Lv{{g.level}} {{g.name}}</td>
+              <td class="text-left">Lv{{g.level}} {{g.name}}</td>
               <td>
-                <input type="text" class="form-control w60" id="input01" placeholder="1" [(ngModel)]="g.price" (ngModelChange)="cal(g)">
+                <input type="text" class="form-control w60" placeholder="1" [(ngModel)]="g.price" (ngModelChange)="cal(g)">
               </td>
               <td>{{ g.gain[0] | number:'.0-0' }}</td>
               <td>{{ g.gain[1] | number:'.0-0' }}</td>
@@ -22,6 +22,14 @@
           </table>
         </tab>
       </tabset>
+      <br>
+      <p class="noselect">
+        <!--<select class="form-control" [(ngModel)]="myRank" (ngModelChange)="calByCity()">
+          <option *ngFor="let r of ranks" value="{{r.value}}">{{r.text}}</option>
+        </select>-->
+        <ba-checkbox [(ngModel)]="partner" label="貿易夥伴" (change)="switchConveyance()"></ba-checkbox>
+        <ba-checkbox [(ngModel)]="alpaca" label="草泥馬" (change)="switchConveyance()"></ba-checkbox>
+      </p>
     </ba-card>
   </div>
 </div>

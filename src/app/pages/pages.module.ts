@@ -1,14 +1,13 @@
-import { NgModule }      from '@angular/core';
+import { AlpacaComponent } from './alpaca/alpaca.component';
 import { CommonModule }  from '@angular/common';
-
-import { routing }       from './pages.routing';
+import { NgModule }      from '@angular/core';
 import { NgaModule } from '../theme/nga.module';
-
 import { Pages } from './pages.component';
+import { routing }       from './pages.routing';
 
 @NgModule({
   imports: [CommonModule, NgaModule, routing],
-  declarations: [Pages]
+  declarations: [Pages, AlpacaComponent]
 })
 export class PagesModule {
 }

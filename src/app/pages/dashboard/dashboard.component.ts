@@ -26,18 +26,22 @@ export class Dashboard {
       this.citys = [...res[0]];
       this.conveyance = [...res[1]];
       this.goods = [...res[2]];
-      this.trades = [...this.conveyance];
+      // this.trades = this.conveyance.map((c) => c);
       this.goods.forEach((g) => g.price = 1);
       this.switchConveyance();
     });
   }
 
+  public test() {
+    console.log('test');
+  }
   public tabSelect(index) {
     this.cityIndex = index;
     this.calByCity();
   }
 
   public switchConveyance() {
+    this.trades = this.conveyance.map((c) => Object.assign({}, c));
     if (this.partner && this.alpaca) {
       this.trades.forEach((o) => {
         o.space += 1;
