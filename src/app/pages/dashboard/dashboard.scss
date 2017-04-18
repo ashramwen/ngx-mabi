@@ -1,23 +1,40 @@
-@media screen and (min-width: 1620px) {
-  .row.shift-up {
-    > * {
-      margin-top: -573px;
-    }
-  }
+.w60 {
+  width: 60px;
 }
 
-@media screen and (max-width: 1620px) {
-  .card.feed-panel.large-card {
-    height: 824px;
-  }
+.w100 {
+  width: 100px;
 }
 
-.user-stats-card {
-  .card-title {
-    padding: 0 0 15px;
-  }
+.w120 {
+  width: 120px;
 }
 
-.blurCalendar {
-  height: 475px;
+.w200 {
+  width: 200px;
+}
+
+table {
+  text-align: center;
+}
+
+.alpaca {
+  position: absolute;
+  bottom: 0;
+  left: 900px;
+  cursor: pointer;
+  width: 250px;
+  height: 393px;
+  background-image: url("/assets/img/alpaca.png");
+  &:hover {
+    background-position: 0 -393px;
+  }
+  outline: none;
+}
+
+.sheep {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  cursor: pointer;
 }

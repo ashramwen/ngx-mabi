@@ -1,15 +1,25 @@
-<div class="container-fluid">
-  <div class="row" baCardClass="large-card">
+<div class="row">
+  <div class="col-md-6">
     <ba-card title="貿易獲利">
-      <tabset>
-        <tab title="About me">
-          Its all about me.
-        </tab>
-        <tab title="Contacts">
-          This is content of the contacts tab
-        </tab>
-        <tab title="Map" [disabled]="true">
-          Content of the Map Tab
+      <tabset (onSelect)="tabSelect($event)">
+        <tab title="{{c.cht_name}}" *ngFor="let c of citys; let i = index" [active]="i===cityIndex">
+          <table class="table">
+            <tr>
+              <th class="w200">貨品</th>
+              <th>價格</th>
+              <th class="w100" *ngFor="let car of conveyance">{{car.name}}</th>
+            </tr>
+            <tr *ngFor="let g of (goods | matchCity:c.id)">
+              <td>Lv{{g.level}} {{g.name}}</td>
+              <td>
+                <input type="text" class="form-control w60" id="input01" placeholder="1" [(ngModel)]="g.price" (ngModelChange)="cal(g)">
+              </td>
+              <td>{{ g.gain[0] | number:'.0-0' }}</td>
+              <td>{{ g.gain[1] | number:'.0-0' }}</td>
+              <td [class.text-warning]="g.gain[2] >= g.gain[3]">{{ g.gain[2] | number:'.0-0' }}</td>
+              <td [class.text-warning]="g.gain[2] <  g.gain[3]">{{ g.gain[3] | number:'.0-0' }}</td>
+            </tr>
+          </table>
         </tab>
       </tabset>
     </ba-card>

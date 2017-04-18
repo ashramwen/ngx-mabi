@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-6">
+    <ba-card title="200T 樂譜">
+      <div class="input-group">
+        <input type="text" class="form-control with-danger-addon" placeholder="200T" [(ngModel)]="text">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button" ngxClipboard [cbContent]="text">copy</button>
+        </span>
+      </div>
+    </ba-card>
+  </div>
+</div>
