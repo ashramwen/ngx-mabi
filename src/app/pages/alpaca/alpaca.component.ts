@@ -14,7 +14,7 @@ export class AlpacaComponent implements OnInit {
 
   baa() {
     let audio = new Audio();
-    audio.src = '/assets/sheep.mp3';
+    audio.src = '/assets/media/sheep.mp3';
     audio.load();
     audio.play();
   }
