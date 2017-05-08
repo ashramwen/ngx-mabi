@@ -17,7 +17,7 @@ export const PAGES_MENU = [{
     data: {
       menu: {
         title: 'general.menu.notebook',
-        icon: 'ion-social-snapchat',
+        icon: 'fa fa-linux',
         selected: false,
         expanded: false,
         order: 100

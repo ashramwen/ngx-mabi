@@ -1,2 +1,8 @@
 @import "~normalize.css";
 @import "theme/theme";
+
+body, html{
+  margin: 0px;
+  font-family: 'roboto';
+  // overflow: hidden;
+}

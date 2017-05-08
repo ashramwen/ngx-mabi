@@ -75,9 +75,9 @@
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@angularclass/hmr/-/hmr-1.2.2.tgz#46a18f89a1e94d05c268b83c9480e005f73fc265"
 
-"@ng-bootstrap/ng-bootstrap@1.0.0-alpha.22":
-  version "1.0.0-alpha.22"
-  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-1.0.0-alpha.22.tgz#aaad058cc39293ea6184e4b9b849f298c0b11a86"
+"@ng-bootstrap/ng-bootstrap@^1.0.0-alpha.25":
+  version "1.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-1.0.0-alpha.25.tgz#68cc2afa17fb5bdd2d775b7f82cffa86ef21b0ed"
 
 "@ngx-translate/core@6.0.1":
   version "6.0.1"
@@ -102,13 +102,6 @@
   resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-0.0.33.tgz#a8719c417b080c012d3497b28e228ac09745fdf2"
   dependencies:
     "@types/node" "*"
-
-"@types/fullcalendar@2.7.40":
-  version "2.7.40"
-  resolved "https://registry.yarnpkg.com/@types/fullcalendar/-/fullcalendar-2.7.40.tgz#cb0766d509fc89b4a42cd199d8b7385c0b78c7fc"
-  dependencies:
-    "@types/jquery" "*"
-    moment ">=2.14.0"
 
 "@types/hammerjs@2.0.34":
   version "2.0.34"
@@ -971,10 +964,6 @@ cipher-base@^1.0.0, cipher-base@^1.0.1:
   resolved "https://registry.yarnpkg.com/cipher-base/-/cipher-base-1.0.3.tgz#eeabf194419ce900da3018c207d212f2a6df0a07"
   dependencies:
     inherits "^2.0.1"
-
-ckeditor@4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/ckeditor/-/ckeditor-4.6.2.tgz#b1552b7a2f9537e165d7afd2d29d3d4959ff6bad"
 
 clap@^1.0.9:
   version "1.1.3"
@@ -2926,10 +2915,6 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
-ionicons@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-2.0.1.tgz#ca398113293ea870244f538f0aabbd4b5b209a3e"
-
 ipaddr.js@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.3.0.tgz#1e03a52fdad83a8bbb2b25cbf4998b4cffcd3dec"
@@ -3497,16 +3482,6 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-leaflet-map@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/leaflet-map/-/leaflet-map-0.2.1.tgz#eb19fa8fa14e87ba7bf8e5d80a7bce2ccc448d20"
-  dependencies:
-    leaflet "^0.7.3"
-
-leaflet@0.7.7, leaflet@^0.7.3:
-  version "0.7.7"
-  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-0.7.7.tgz#1e352ba54e63d076451fa363c900890cb2cf75ee"
-
 levn@~0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/levn/-/levn-0.3.0.tgz#3b09924edf9f083c0490fdd4c0bc4421e04764ee"
@@ -4008,7 +3983,7 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   dependencies:
     minimist "0.0.8"
 
-moment@2.x.x, moment@>=2.14.0:
+moment@2.x.x:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
@@ -4059,10 +4034,6 @@ ng2-completer@1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/ng2-completer/-/ng2-completer-1.3.1.tgz#f75dba1a0b376c2e6b49f73ce2b2d7c29614a555"
 
-ng2-tree@2.0.0-alpha.5:
-  version "2.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/ng2-tree/-/ng2-tree-2.0.0-alpha.5.tgz#197f33af92f16f4a9168a3394ed0cbf9c1708a4a"
-
 ngc-webpack@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ngc-webpack/-/ngc-webpack-2.0.0.tgz#ebd1f6937b7b81cbcd6d9d1bd1fa9001c6be145f"
@@ -4083,10 +4054,6 @@ ngx-tabs@^0.0.13:
   resolved "https://registry.yarnpkg.com/ngx-tabs/-/ngx-tabs-0.0.13.tgz#051bf80afe6bee11dd4e080da3f021709fa2c865"
   dependencies:
     typescript "^2.0.10"
-
-ngx-uploader@2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/ngx-uploader/-/ngx-uploader-2.2.5.tgz#e25826cc005892f2795bff729d4282a1b0d28c0b"
 
 no-case@^2.2.0:
   version "2.3.1"

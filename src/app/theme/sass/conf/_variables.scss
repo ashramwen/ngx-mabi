@@ -1,4 +1,4 @@
-$font-family: 'Roboto', sans-serif;
+$font-family: 'roboto', sans-serif;
 
 $resXXL: 1280px;
 $resXL: 1170px;
@@ -40,4 +40,4 @@ $stackoverflow-color: #2F96E8;
 $dribble-color: #F26798;
 $behace-color: #0093FA;
 
-$fa-font-path: '../assets/fonts/font-awesome';
+$fa-font-path: $fonts-root + 'font-awesome';
