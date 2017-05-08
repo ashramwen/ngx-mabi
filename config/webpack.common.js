@@ -208,7 +208,7 @@ module.exports = function (options) {
      * See: http://webpack.github.io/docs/configuration.html#plugins
      */
     plugins: [
-      new ExtractTextPlugin({filename: 'initial.css', allChunks: true}),
+      new ExtractTextPlugin({filename: 'css/initial.css', allChunks: true}),
 
       new AssetsPlugin({
         path: helpers.root('dist'),
