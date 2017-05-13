@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'alpaca',
@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlpacaComponent implements OnInit {
 
+  @ViewChild('audio')
+  public audio: ElementRef;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   baa() {
-    let audio = new Audio();
-    audio.src = '/assets/media/sheep.mp3';
-    audio.load();
-    audio.play();
+    (this.audio.nativeElement as HTMLAudioElement).play();
   }
 }

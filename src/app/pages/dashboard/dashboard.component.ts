@@ -32,9 +32,6 @@ export class Dashboard {
     });
   }
 
-  public test() {
-    console.log('test');
-  }
   public tabSelect(index) {
     this.cityIndex = index;
     this.calByCity();
