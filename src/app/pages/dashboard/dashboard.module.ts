@@ -12,7 +12,7 @@ import { TabsModule } from 'ngx-tabs';
 import { routing } from './dashboard.routing';
 
 // Must export the config
-export const firebaseConfig = {
+const firebaseConfig = {
   apiKey: 'AIzaSyAFtTgFoTX2pJ1dADgjSuXTMRnhGs5xV3Q',
   authDomain: 'firebase-mabi.firebaseapp.com',
   databaseURL: 'https://mabi.firebaseio.com',

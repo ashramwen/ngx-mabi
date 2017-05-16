@@ -63,7 +63,9 @@ export class Dashboard implements OnInit {
     this.calByCity();
   };
 
-  public calByCity() {
+  public calByCity(value?: string) {
+    if (value !== undefined)
+      this.myRank = parseInt(value, 0);
     // setCookie('commerceRank', this.myRank, 30);
     this.goods.forEach((good) => {
       this.cal(good);

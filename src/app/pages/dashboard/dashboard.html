@@ -23,13 +23,18 @@
         </tab>
       </tabset>
       <br>
-      <p class="noselect">
-        <!--<select class="form-control" [(ngModel)]="myRank" (ngModelChange)="calByCity()">
-          <option *ngFor="let r of ranks" value="{{r.value}}">{{r.text}}</option>
-        </select>-->
+      <div class="form-horizontal noselect">
+        <div class="form-group row">
+          <label class="col-md-1 col-form-label">Rank</label>
+          <div class="col-md-2">
+            <select class="form-control" [ngModel]="myRank" (ngModelChange)="calByCity($event)">
+              <option *ngFor="let r of ranks" value="{{r.value}}">{{r.text}}</option>
+            </select>
+          </div>
+        </div>
         <ba-checkbox [(ngModel)]="partner" label="貿易夥伴" (change)="switchConveyance()"></ba-checkbox>
         <ba-checkbox [(ngModel)]="alpaca" label="草泥馬" (change)="switchConveyance()"></ba-checkbox>
-      </p>
+      </div>
     </ba-card>
   </div>
 </div>
