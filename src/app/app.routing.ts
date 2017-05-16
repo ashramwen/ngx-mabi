@@ -7,4 +7,6 @@ export const routes: Routes = [
   { path: '**', redirectTo: 'pages/dashboard' }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes, {
+  // enableTracing: true
+});

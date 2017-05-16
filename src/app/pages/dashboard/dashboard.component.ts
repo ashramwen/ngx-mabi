@@ -1,4 +1,4 @@
-import { AngularFire } from 'angularfire2';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { ranks } from './ranks.const';
@@ -20,13 +20,12 @@ export class Dashboard {
   public cityIndex = 0;
 
   constructor(
-    af: AngularFire
+    db: AngularFireDatabase
   ) {
-    af.database.list('').subscribe((res) => {
+    db.list('/').subscribe((res) => {
       this.citys = [...res[0]];
       this.conveyance = [...res[1]];
       this.goods = [...res[2]];
-      // this.trades = this.conveyance.map((c) => c);
       this.goods.forEach((g) => g.price = 1);
       this.switchConveyance();
     });

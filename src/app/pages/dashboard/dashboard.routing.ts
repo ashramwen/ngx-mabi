@@ -1,5 +1,6 @@
-import { Routes, RouterModule }  from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
+import { CommerceResolve } from './../shared/resolves/commerce-resolve';
 import { Dashboard } from './dashboard.component';
 import { ModuleWithProviders } from '@angular/core';
 
@@ -8,9 +9,9 @@ export const routes: Routes = [
   {
     path: '',
     component: Dashboard,
-    children: [
-      //{ path: 'treeview', component: TreeViewComponent }
-    ]
+    // resolve: {
+    //   commerce: CommerceResolve
+    // }
   }
 ];
 

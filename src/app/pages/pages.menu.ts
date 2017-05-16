@@ -34,6 +34,6 @@ export const PAGES_MENU = [{
         order: 200,
       }
     },
-    children: EXTERNAL_LINKS
+    children: links
   }]
 }];

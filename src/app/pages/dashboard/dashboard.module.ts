@@ -1,5 +1,7 @@
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 import { AppTranslationModule } from '../../app.translation.module';
+import { CommerceResolve } from './../shared/resolves/commerce-resolve';
 import { CommonModule } from '@angular/common';
 import { Dashboard } from './dashboard.component';
 import { FormsModule } from '@angular/forms';
@@ -21,6 +23,7 @@ export const firebaseConfig = {
 @NgModule({
   imports: [
     AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
     CommonModule,
     FormsModule,
     AppTranslationModule,
@@ -33,7 +36,7 @@ export const firebaseConfig = {
     MatchCityPipe
   ],
   providers: [
-
+    CommerceResolve
   ]
 })
 export class DashboardModule { }

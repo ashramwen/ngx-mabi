@@ -8,7 +8,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://ogc.bowsunfan.la/mabinogi/trainee_knight.html',
       target: '_blank',
@@ -16,7 +17,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://forum.gamer.com.tw/G2.php?bsn=07422&&sn=15164',
       target: '_blank',
@@ -24,7 +26,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://forum.gamer.com.tw/G2.php?bsn=07422&sn=15163',
       target: '_blank',
@@ -32,7 +35,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://forum.gamer.com.tw/Co.php?bsn=07422&sn=1715779',
       target: '_blank',
@@ -41,7 +45,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://forum.gamer.com.tw/Co.php?bsn=07422&sn=1668493',
       target: '_blank',
@@ -49,7 +54,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://forum.gamer.com.tw/C.php?bsn=07422&snA=224471',
       target: '_blank',
@@ -57,7 +63,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'https://docs.google.com/a/inventalk.com.tw/spreadsheet/ccc?key=0AmYaqEn_Pcx6dFVoSm12UWRuLVc3dVY5XzdrZWxObVE&usp=sharing#gid=0',
       target: '_blank',
@@ -65,7 +72,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://global.erinn.biz/shopboard.php?altsv=mabitw4',
       target: '_blank',
@@ -81,7 +89,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'https://docs.google.com/spreadsheets/d/1yTteVz2gJipzb5xF8Gh-3Xg-lWemqE5HnGXBMamnP4Q/edit#gid=0',
       target: '_blank',
@@ -89,7 +98,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://mabicat.dousetsu.com/index.htm',
       target: '_blank',
@@ -97,7 +107,8 @@ export const EXTERNAL_LINKS = [{
     }
   }
 }, {
-  path: '', data: {
+  path: '',
+  data: {
     menu: {
       url: 'http://tw.beanfun.com/mabinogi/index.aspx',
       target: '_blank',
