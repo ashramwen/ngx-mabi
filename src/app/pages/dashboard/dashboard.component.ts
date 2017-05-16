@@ -1,5 +1,7 @@
-import { AngularFireDatabase } from 'angularfire2/database';
-import { Component } from '@angular/core';
+import { City, Commerce, Conveyance, Good } from './../shared/model/index';
+import { Component, OnInit } from '@angular/core';
+
+import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Rx';
 import { ranks } from './ranks.const';
 
@@ -8,36 +10,40 @@ import { ranks } from './ranks.const';
   styleUrls: ['./dashboard.scss'],
   templateUrl: './dashboard.html'
 })
-export class Dashboard {
+export class Dashboard implements OnInit {
   public ranks = ranks;
-  public citys;
-  public conveyance;
-  public goods;
-  public trades;
-  public partner = true;
-  public alpaca = true;
-  public myRank = 15;
-  public cityIndex = 0;
+  public citys: City[];
+  public conveyance: Conveyance[];
+  public goods: Good[];
+  public trades: Conveyance[];
+  public partner: boolean = true;
+  public alpaca: boolean = true;
+  public myRank: number = 15;
+  public cityIndex: number = 0;
+
+  private commerce: Commerce;
 
   constructor(
-    db: AngularFireDatabase
-  ) {
-    db.list('/').subscribe((res) => {
-      this.citys = [...res[0]];
-      this.conveyance = [...res[1]];
-      this.goods = [...res[2]];
-      this.goods.forEach((g) => g.price = 1);
-      this.switchConveyance();
-    });
+    private route: ActivatedRoute
+  ) { }
+
+  public ngOnInit() {
+    this.commerce = this.route.snapshot.data['commerce'];
+    this.citys = this.commerce.citys;
+    this.conveyance = this.commerce.conveyance;
+    this.goods = this.commerce.goods;
+
+    this.goods.forEach((g) => g.price = 1);
+    this.switchConveyance();
   }
 
-  public tabSelect(index) {
+  public tabSelect(index: number) {
     this.cityIndex = index;
     this.calByCity();
   }
 
   public switchConveyance() {
-    this.trades = this.conveyance.map((c) => Object.assign({}, c));
+    this.trades = this.conveyance.map((c) => ({ ...c }));
     if (this.partner && this.alpaca) {
       this.trades.forEach((o) => {
         o.space += 1;
@@ -62,11 +68,6 @@ export class Dashboard {
     this.goods.forEach((good) => {
       this.cal(good);
     });
-  }
-
-  public sheep() {
-    // var thissound = angular.element('#audio1')[0];
-    // thissound.play();
   }
 
   private cal(good) {

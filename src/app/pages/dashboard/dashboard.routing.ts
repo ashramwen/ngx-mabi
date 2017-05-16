@@ -9,9 +9,9 @@ export const routes: Routes = [
   {
     path: '',
     component: Dashboard,
-    // resolve: {
-    //   commerce: CommerceResolve
-    // }
+    resolve: {
+      commerce: CommerceResolve
+    }
   }
 ];
 
