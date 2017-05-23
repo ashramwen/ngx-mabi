@@ -3,6 +3,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 import { CommerceResolve } from './resolves/commerce-resolve';
 import { CommonModule } from '@angular/common';
+import { ElephantComponent } from './components/elephant/elephant.component';
 import { NgModule } from '@angular/core';
 
 // Must export the config
@@ -15,7 +16,8 @@ const firebaseConfig = {
 };
 
 const SHARED_COMPONENTS = [
-  AlpacaComponent
+  AlpacaComponent,
+  ElephantComponent
 ];
 
 @NgModule({

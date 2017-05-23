@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'alpaca',
+  selector: 'app-alpaca',
   templateUrl: './alpaca.component.html',
   styleUrls: ['./alpaca.component.scss']
 })
