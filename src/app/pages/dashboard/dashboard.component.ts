@@ -1,4 +1,4 @@
-import { City, Commerce, Conveyance, Good } from './../shared/model/index';
+import { City, Commerce, Conveyance, Good } from './../../shared/model';
 import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';

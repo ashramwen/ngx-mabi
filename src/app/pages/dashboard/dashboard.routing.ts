@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { CommerceResolve } from './../shared/resolves/commerce-resolve';
+import { CommerceResolve } from './../../shared/resolves/commerce-resolve';
 import { Dashboard } from './dashboard.component';
 import { ModuleWithProviders } from '@angular/core';
 
